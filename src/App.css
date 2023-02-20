@@ -1,38 +1,135 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@700&display=swap');
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #62626F #141724;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #141724;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #62626F;
+  border-radius: 20px;
+}
+
+.align-center{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #1D2033;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.keyIconWrapper{
+  color: #62626F !important;
+  font-size: 8pt;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.keyIcon{
+  border: 1px solid #62626F !important;
+  background-color: black;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.form-label{
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12.2727px;
+    line-height: 16px;
+    /* identical to box height */
+  
+    text-transform: uppercase;
+  
+    color: #FDF5E7;
+}
+
+.form-input{
+  background: #141724 !important;
+  border: 2px solid #62626F !important;
+  border-radius: 8px !important;
+  color: #FDF5E7 !important;
+}
+
+.form-input-placeholder{
+  color: #FDF5E7 !important;
+}
+
+.form-input-placeholder::placeholder{
+  color: #62626F !important;
+}
+
+.button-link{
+  color: #62626F !important;
+}
+
+.button-link:hover{
+  background: transparent !important;
+}
+
+.button-outlined{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  padding: 0px 16px !important;
+  gap: 16px;
+
+  width: 195px;
+
+  height: 60px !important;
+
+  background: #191C2C !important;
+  border: 2px solid #235FE3 !important;
+  color: #FDF5E7 !important;
+  border-radius: 8px !important;
 }
 
-.App-link {
-  color: #61dafb;
+.disabled-button{
+  opacity: .5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button-filled{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 0px 16px !important;
+  gap: 16px;
+
+  height: 60px !important;
+  width: 100% !important;
+
+  background: #FF4747 !important;
+  color: #1D2033 !important;
+  border-radius: 8px !important;
+}
+
+.form-status-label{
+  font-family: 'Overpass';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12.2727px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+
+  color: #62626F;
+  height: 60px !important;
+  background: #14172480;
+  width: 91% !important;
+  border-radius: 8px;
 }
