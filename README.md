@@ -1,4 +1,4 @@
 ReadMe a definir
 ========================
 
-proximamente definiré este readme.
+Proximamente definiré este README.
