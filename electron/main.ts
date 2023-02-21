@@ -27,6 +27,7 @@ function createWindow() {
     height: 700,
     frame: false,
     show: false,
+    icon: __dirname + '/../favicon.ico',
     webPreferences: {
       // contextIsolation: false,
       nodeIntegration: true,
@@ -75,7 +76,7 @@ app.whenReady().then(() => {
     .catch((err) => console.log('An error occurred: ', err));
 
 
-  let splash = new BrowserWindow({width: 400, height: 200, transparent: true, frame: false, alwaysOnTop: true});
+  let splash = new BrowserWindow({width: 400, height: 200, transparent: true, frame: false, alwaysOnTop: true, icon: __dirname + '/../favicon.ico',});
   if (app.isPackaged) {
     splash.loadURL(`file://${__dirname}/../splash.html`);
   } else {
