@@ -1,4 +1,4 @@
-# Filtrador de archivos [!watchGit](https://img.shields.io/github/watchers/gastonalt/Filtrador_de_archivos?style=social)
+# Filtrador de archivos [![license](https://img.shields.io/github/watchers/gastonalt/Filtrador_de_archivos?style=social)]
 
 Una app diseñada para seleccionar, filtrar y copiar archivos dado un directorio (con la totalidad de los archivos), un listado de archivos que se deseen filtrar y un directorio de destino (donde se copiarán los archivos filtrados).
 
